@@ -381,7 +381,7 @@ transform: translateY(0%);
 }
 .container-footer {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 .social-links-footer {
     display: flex;
@@ -416,9 +416,12 @@ transform: translateY(0%);
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    /* АДАПТИВНОСТЬ */
+    text-align: center;
 }
 .logo-footer-div {
-    margin-right: 120px;
+    margin-right: 0;
+    text-align: center;
 }
 .mb-five {
     margin-bottom:5px;
@@ -709,9 +712,8 @@ transform: translateY(0%);
     fill: #4D5AE5;
 
 }
-
 .mr-auto {
-    margin-right: auto;
+    margin-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -751,6 +753,18 @@ transform: translateY(0%);
     .section-four-list-item {
             width: calc((100% - 48px) / 2);
     }
+    .container-footer {
+        align-items: flex-start;
+    }
+    .logo-footer-div {
+        text-align: start;
+    }
+        .footer-heading {
+            text-align: start;
+        }
+                .footer-div-form {
+                    margin-right:25px
+                }
     .footer-form {
             gap: 24px;
             flex-direction: row;
@@ -761,8 +775,8 @@ transform: translateY(0%);
         .container {
                 flex-direction: row;
                 flex-wrap: wrap;
-                gap: 10px;
                 /* МЕДИАЗАПРОС */
+                gap: 24px;
                 width: 1024px;
                 justify-content: center;
             }
@@ -806,6 +820,21 @@ transform: translateY(0%);
             .container-footer {
                 width: 1158px;
             }
+            .footer-div-form {
+                margin-right:0;
+                width:100%;
+                max-width: fit-content;
+            }
+            .logo-footer-div {
+            margin-right: 120px;
+            /* text-align: start; */
+            }
+            .mr-auto {
+            margin-right: auto;
+            }
+            .container-footer {
+                            align-items: baseline;
+                        }
             .footer-form {
                 gap: 24px;
                 flex-direction: row;
@@ -813,4 +842,5 @@ transform: translateY(0%);
             .footer {
                 min-width: 1158px;
             }
+
 } 
