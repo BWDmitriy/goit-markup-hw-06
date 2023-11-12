@@ -21,6 +21,18 @@
 <body>
     <header class="header">
         <div class="container header-container">
+            <!-- Мобильная версия -->
+            <div class="mobile-header">
+                <a class="logo-header" href="/">
+                    Web<span class="logo-header-span">Studio</span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <svg style="fill:black" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </div>
+            <!-- НЕ мобильная версия -->
             <nav class="nav">
                 <a class="logo-header" href="/">
                     Web<span class="logo-header-span">Studio</span>
@@ -32,7 +44,7 @@
                 </ul>
             </nav>
             <address class="address-style">
-                <ul class="header-list">
+                <ul class="header-list address-list">
                     <li><a class="address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="address-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
@@ -477,6 +489,27 @@
 
 
         </div>
+    </div>
+    <div class="backdrop is-open">
+        <div class="mobile-header-menu modal-window">
+            <nav class="nav-hidden">
+                <a class="logo-header" href="/">
+                    Web<span class="logo-header-span">Studio</span>
+                </a>
+                <ul class="header-list-hidden">
+                    <li class="current"><a class="nav-item current" href="./index.html">Studio</a></li>
+                    <li><a class="nav-item" href="">Portfolio</a></li>
+                    <li><a class="nav-item" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="address-style-hidden">
+                <ul class="header-list address-list">
+                    <li><a class="address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="address-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
+
     </div>
 </body>
 
