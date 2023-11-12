@@ -724,11 +724,8 @@ transform: translateY(0%);
         justify-content: center;
     }
     .section-one-flex {
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-    }
-    .heading-one {
-        min-width: 768px;
     }
     .section-two-list {
         gap: 24px;
@@ -770,10 +767,10 @@ transform: translateY(0%);
                 justify-content: center;
             }
         
-            /* .section-one-flex {
-                flex-direction: row;
-                flex-wrap: wrap;
-            } */
+        .section-one-flex {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
         
             /* .heading-one {
                 min-width: 768px;
