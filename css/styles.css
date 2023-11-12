@@ -940,7 +940,7 @@ transform: translateY(0%);
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
         .container {
                 flex-direction: row;
                 flex-wrap: wrap;
