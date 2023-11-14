@@ -12,6 +12,8 @@ main {
 .header {
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    /* АДАПТИВНОСТЬ-2 */
+    padding:16px;
 }
 
 ul {
@@ -165,7 +167,9 @@ button {
 }
 .section-one {
     background: #2E2F42;
-    padding: 188px 0;
+    padding:72px 16px;
+    /* АДАПТИВНОСТЬ-2  */
+    /* padding: 188px 0; */
 }
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
@@ -199,16 +203,25 @@ button {
     margin-bottom: 72px;
 }
 .heading-one {
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.071;
-    letter-spacing: 0.02em;
-    max-width: 496px;
     margin-left:auto;
     margin-right:auto;
     margin-bottom:72px;
+    /* АДАПТИВНОСТЬ-2  */
+    /* max-width: 496px; */
+    /* color: #FFFFFF;
+        text-align: center;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.071;
+        letter-spacing: 0.02em; */
+    width: 288px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 .button-style {
     color: #FFFFFF;
@@ -276,13 +289,17 @@ button {
 } */
 .section-three {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    /* АДАПТИВНОСТЬ 2 */
+    /* padding: 120px 0; */
+    padding: 96px 16px;
 }
 .section-three-list {
     display: flex;
     gap: 24px;
     /* АДАПТИВНОСТЬ */
     flex-direction: column;
+    /* АДАПТИВНОСТЬ 2 */
+
 }
 .section-three-list-item {
     background-color: #FFFFFF;
@@ -375,14 +392,16 @@ transform: translateY(0%);
     max-width: 264px;
 }
 .container {
-    display: flex;
+    /* display: flex;
     gap: 5px;
     flex-direction: column;
-    max-width: 1170px;
-    width:320px;
-    align-items: center;
-   margin: 0 auto;
-    padding: 0 15px;
+    align-items: center; */
+    margin: 0 auto;
+    
+    /* АДАПТИВНОСТЬ-2 */
+    max-width: 320px;
+    padding: 0 16px;
+    /* width: 320px; */
 }
 .header-container {
     display: flex;
@@ -860,15 +879,19 @@ transform: translateY(0%);
 }
 
 @media (min-width: 768px) {
+    .header {
+        padding: 0;
+    }
     .container {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
         /* МЕДИАЗАПРОС */
-        width: 768px;
         justify-content: center;
         margin: 0 auto;
         padding: 0 15px;
+        /* МЕДИАЗАПРОС-2 */
+        max-width: 768px;
     }
     .header-container {
         display: flex;
@@ -891,6 +914,19 @@ transform: translateY(0%);
     .address-item {
         padding: 0; 
     }
+    .heading-one {
+            /* МЕДИАЗАПРОС-2 */
+            max-width: 496px;
+            color: #FFFFFF;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.071;
+            letter-spacing: 0.02em;
+    }
+    .section-one {
+        /* МЕДИАЗАПРОС-2 */
+        padding: 112px 136px;
+    }
     .section-one-flex {
         flex-direction: column;
         flex-wrap: wrap;
@@ -906,7 +942,11 @@ transform: translateY(0%);
     .section-two-list-item {
             width: calc((100% - 48px) / 2);
     }
-    
+    .section-three {
+        /* МЕДИАЗАПРОС-2 */
+       /* padding: 120px 0; */
+        padding: 96px 108px;
+    }
     .section-three-list {
             gap: 24px;
             flex-direction: row;
@@ -946,8 +986,9 @@ transform: translateY(0%);
                 flex-wrap: wrap;
                 /* МЕДИАЗАПРОС */
                 gap: 24px;
-                width: 1024px;
                 /* justify-content: space-between; */
+                /* МЕДИАЗАПРОС-2 */
+                max-width: 1158px;
             }
                         .address-list {
                             flex-direction: row;
@@ -955,6 +996,10 @@ transform: translateY(0%);
                         }
         .address-item {
                 padding: 24px 0;
+        }
+        .section-one {
+            /* МЕДИАЗАПРОС-2 */
+            padding: 188px 0;
         }
         .heading-two {
             text-align:center;
@@ -965,9 +1010,9 @@ transform: translateY(0%);
         line-height: 1.2;
         letter-spacing: 0.02em;   
         }
-                .section-two-icon {
-                    display: flex;
-                }
+        .section-two-icon {
+                display: flex;
+        }
         .section-one-flex {
             flex-direction: column;
             flex-wrap: wrap;
@@ -981,7 +1026,10 @@ transform: translateY(0%);
             .section-two-list-item {
                 width: calc((100% - 72px) / 3);
             }
-        
+            .section-three {
+            /* МЕДИАЗАПРОС-2 */
+            padding: 120px 0;
+            }
             .section-three-list {
                 gap: 24px;
                 /* МЕДИАЗАПРОС */
