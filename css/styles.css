@@ -212,7 +212,8 @@ button {
         font-weight: 700;
         line-height: 1.071;
         letter-spacing: 0.02em; */
-    width: 288px;
+    /* width: 288px; */
+    width: 150px;
     color: #FFFFFF;
     text-align: center;
     font-size: 36px;
@@ -805,7 +806,9 @@ transform: translateY(0%);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color:#8e8f99;
-    display:block;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 .contact-form-checkbox-label-span {
     width: 16px;
@@ -818,6 +821,7 @@ transform: translateY(0%);
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
+    flex-shrink: 0;
 }
 .contact-form-checkbox-input:checked+.contact-form-checkbox-label > .contact-form-checkbox-label-span {
     background-color: #404bbf;
@@ -932,12 +936,13 @@ transform: translateY(0%);
     }
     .heading-one {
         /* МЕДИАЗАПРОС-2 */
-        max-width: 496px;
+        /* max-width: 496px; */
         color: #FFFFFF;
         font-size: 56px;
         font-weight: 700;
         line-height: 1.071;
         letter-spacing: 0.02em;
+        width: 496px;
     }
     .section-one {
         /* МЕДИАЗАПРОС-2 */
