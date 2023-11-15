@@ -39,6 +39,7 @@ button {
     display: flex;
     align-items: flex-start;
     gap: 40px;
+    display:none;
 }
 .header-list-hidden {
     display: flex;
@@ -57,8 +58,6 @@ button {
 }
 .nav {
     align-items: center;
-    /* АДАПТИВНОСТЬ */
-    display: none;
 }
 .nav-hidden {
     margin-bottom: auto;
@@ -136,8 +135,7 @@ button {
 }
 .address-style {
     font-style: normal;
-    /* АДАПТИВНОСТЬ  */
-    display: none;
+    display:none;
 }
 .address-style-hidden {
     font-style: normal;
@@ -259,9 +257,9 @@ button {
     margin:0;
 }
 /* АДАПТИВНОСТЬ-2 */
-/* .section-two {
-    padding: 120px 0;
-} */
+.section-two {
+    padding: 96px 16px;
+}
 .section-two-list {
     display: flex;
     /* АДАПТИВНОСТЬ */
@@ -291,7 +289,7 @@ button {
     background-color: #F4F4FD;
     /* АДАПТИВНОСТЬ 2 */
     /* padding: 120px 0; */
-    padding: 96px 16px;
+    padding: 96px 28px;
 }
 .section-three-list {
     display: flex;
@@ -316,8 +314,7 @@ button {
 }
 
 .section-four {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding:96px 16px;
 }
 .section-four-list {
     display: flex;
@@ -330,7 +327,7 @@ button {
 }
 .section-four-list-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    height: 368px;
+    
     /* АДАПТИВНОСТЬ */
     /* width: calc((100% - 48px) / 3); */
 }
@@ -467,8 +464,10 @@ transform: translateY(0%);
 }
 .container-footer {
     display: flex;
-    align-items: center;
     gap: 72px;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    flex-direction: column;
 }
 .social-links-hidden {
     display: flex;
@@ -876,8 +875,14 @@ transform: translateY(0%);
 }
 
 @media (min-width: 768px) {
+    .mobile {
+        display:none;
+    }
     .header {
         padding: 0;
+    }
+    .header-list {
+        display: flex;
     }
     .container {
         /* flex-direction: row;
@@ -928,9 +933,9 @@ transform: translateY(0%);
         flex-direction: column;
         flex-wrap: wrap;
     }
-        .section-two {
+        /* .section-two {
             padding: 96px 16px;
-        }
+        } */
         .section-two-heading {
         text-align: start;
         }
@@ -958,14 +963,24 @@ transform: translateY(0%);
     .section-three-list-item {
             width: calc((100% - 48px) / 2);
     }
+    .section-four {
+        padding: 96px 16px;
+    }
     .section-four-list {
             flex-direction: row;
     }
     .section-four-list-item {
-            width: calc((100% - 48px) / 2);
+            width: calc((100% - 24px) / 2);
     }
     .container-footer {
-        align-items: flex-start;
+        align-items: baseline;
+        justify-content: center;
+        margin: 0 auto;
+        width: 584px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
     }
     .logo-footer-div {
         text-align: start;
@@ -983,14 +998,9 @@ transform: translateY(0%);
 }
 
 @media screen and (min-width: 1158px) {
-        .container {
-                /* flex-direction: row;
-                flex-wrap: wrap;
-                gap: 24px;
-                justify-content: space-between; */
-                /* МЕДИАЗАПРОС-2 */
-                max-width: 1158px;
-            }
+    .container {
+        max-width: 1158px;
+    }
         .address-list {
             flex-direction: row;
             /* МЕДИАЗАПРОС-2 */
@@ -1046,6 +1056,10 @@ transform: translateY(0%);
             .section-three-item-text {
                 padding: 32px 16px;
             }
+            .section-four {
+                padding-top: 120px;
+                padding-bottom: 120px;
+            }
             .section-four-list-item {
                 width: calc((100% - 48px) / 3);
                 
@@ -1053,7 +1067,11 @@ transform: translateY(0%);
             .container-footer {
                 width: 1158px;
                 align-items: baseline;
-                gap:unset;
+                gap: unset;
+                padding: 0 15px;
+                margin: 0 auto;
+                max-width: 1158px;
+ 
             }
             .footer-div-form {
                 margin-right:0;
