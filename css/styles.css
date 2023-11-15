@@ -309,6 +309,7 @@ button {
     border-radius: 0px 0px 4px 4px;
     /* АДАПТИВНОСТЬ */
     /* width: calc((100% - 72px) / 4); */
+    max-width: 320px;
 }
 .text-centered {
     text-align:center;
