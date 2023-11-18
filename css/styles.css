@@ -948,10 +948,7 @@ transform: translateY(0%);
         /* МЕДИАЗАПРОС-2 */
         padding: 112px 0;
     }
-    .section-one-flex {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+    
         /* .section-two {
             padding: 96px 16px;
         } */
@@ -1052,10 +1049,7 @@ transform: translateY(0%);
         .heading-two {
             text-align:center;
         }
-        .section-one-flex {
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
+     
         .section-two {
             padding: 120px 0;
         }
