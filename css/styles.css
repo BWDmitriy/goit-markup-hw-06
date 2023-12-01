@@ -639,6 +639,7 @@ transform: translateY(0%);
         padding: 72px 24px 24px 16px;
         display: flex;
         flex-direction: column;
+        position: relative;
         /* justify-content: space-around; */
 }
 .button-mobile {
