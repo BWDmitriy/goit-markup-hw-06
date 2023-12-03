@@ -985,6 +985,8 @@ transform: translateY(0%);
     } */
     .section-four-list {
             flex-direction: row;
+            column-gap: 24px;
+            row-gap: 72px;
     }
     .section-four-list-item {
             width: calc((100% - 24px) / 2);
@@ -1097,6 +1099,9 @@ transform: translateY(0%);
             .section-four-list-item {
                 width: calc((100% - 48px) / 3);
                 
+            }
+            .section-four-list {
+                row-gap: 48px;
             }
             .container-footer {
                 width: 1158px;
